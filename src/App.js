@@ -1,13 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import CurrentLocation from "./currentLocation";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Weather app
-      </header>
-    </div>
+    <React.Fragment>
+      <div className="container">
+        <CurrentLocation />
+      </div>
+      <div className="footer-info">
+      Copyrights © 2024 WeatherApp
+      </div>
+    </React.Fragment>
   );
 }
 
